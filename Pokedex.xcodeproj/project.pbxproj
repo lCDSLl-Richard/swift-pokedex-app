@@ -14,6 +14,12 @@
 		6CAE19F42A9E6E8600B50E88 /* PokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE19F32A9E6E8600B50E88 /* PokedexTests.swift */; };
 		6CAE19FE2A9E6E8600B50E88 /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE19FD2A9E6E8600B50E88 /* PokedexUITests.swift */; };
 		6CAE1A002A9E6E8600B50E88 /* PokedexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE19FF2A9E6E8600B50E88 /* PokedexUITestsLaunchTests.swift */; };
+		6CAE1A0E2A9E6EDB00B50E88 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAE1A0D2A9E6EDB00B50E88 /* Alamofire */; };
+		6CAE1A112A9E6EFB00B50E88 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAE1A102A9E6EFB00B50E88 /* SDWebImageSwiftUI */; };
+		6CAE1A132A9E717400B50E88 /* Pokedex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE1A122A9E717400B50E88 /* Pokedex.swift */; };
+		6CAE1A152A9E777800B50E88 /* PokemonAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE1A142A9E777800B50E88 /* PokemonAPIProtocol.swift */; };
+		6CAE1A172A9E78D500B50E88 /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE1A162A9E78D500B50E88 /* PokemonRepository.swift */; };
+		6CAE1A192A9E84EF00B50E88 /* NetworkApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE1A182A9E84EF00B50E88 /* NetworkApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,10 @@
 		6CAE19F92A9E6E8600B50E88 /* PokedexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokedexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAE19FD2A9E6E8600B50E88 /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 		6CAE19FF2A9E6E8600B50E88 /* PokedexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CAE1A122A9E717400B50E88 /* Pokedex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pokedex.swift; path = Modelos/Pokedex.swift; sourceTree = "<group>"; };
+		6CAE1A142A9E777800B50E88 /* PokemonAPIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIProtocol.swift; sourceTree = "<group>"; };
+		6CAE1A162A9E78D500B50E88 /* PokemonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonRepository.swift; sourceTree = "<group>"; };
+		6CAE1A182A9E84EF00B50E88 /* NetworkApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAE1A112A9E6EFB00B50E88 /* SDWebImageSwiftUI in Frameworks */,
+				6CAE1A0E2A9E6EDB00B50E88 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +86,10 @@
 		6CAE19D62A9E6E8500B50E88 = {
 			isa = PBXGroup;
 			children = (
+				6CAE1A122A9E717400B50E88 /* Pokedex.swift */,
+				6CAE1A142A9E777800B50E88 /* PokemonAPIProtocol.swift */,
+				6CAE1A162A9E78D500B50E88 /* PokemonRepository.swift */,
+				6CAE1A182A9E84EF00B50E88 /* NetworkApiService.swift */,
 				6CAE19E12A9E6E8500B50E88 /* Pokedex */,
 				6CAE19F22A9E6E8600B50E88 /* PokedexTests */,
 				6CAE19FC2A9E6E8600B50E88 /* PokedexUITests */,
@@ -143,6 +159,10 @@
 			dependencies = (
 			);
 			name = Pokedex;
+			packageProductDependencies = (
+				6CAE1A0D2A9E6EDB00B50E88 /* Alamofire */,
+				6CAE1A102A9E6EFB00B50E88 /* SDWebImageSwiftUI */,
+			);
 			productName = Pokedex;
 			productReference = 6CAE19DF2A9E6E8500B50E88 /* Pokedex.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +235,10 @@
 				Base,
 			);
 			mainGroup = 6CAE19D62A9E6E8500B50E88;
+			packageReferences = (
+				6CAE1A0C2A9E6EDB00B50E88 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6CAE1A0F2A9E6EFB00B50E88 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 6CAE19E02A9E6E8500B50E88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CAE1A152A9E777800B50E88 /* PokemonAPIProtocol.swift in Sources */,
+				6CAE1A192A9E84EF00B50E88 /* NetworkApiService.swift in Sources */,
+				6CAE1A172A9E78D500B50E88 /* PokemonRepository.swift in Sources */,
 				6CAE19E52A9E6E8500B50E88 /* ContentView.swift in Sources */,
 				6CAE19E32A9E6E8500B50E88 /* PokedexApp.swift in Sources */,
+				6CAE1A132A9E717400B50E88 /* Pokedex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pokedex/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YA9576WH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pokedex/Preview Content\"";
+				DEVELOPMENT_TEAM = 3YA9576WH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -577,6 +607,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6CAE1A0C2A9E6EDB00B50E88 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		6CAE1A0F2A9E6EFB00B50E88 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6CAE1A0D2A9E6EDB00B50E88 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CAE1A0C2A9E6EDB00B50E88 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6CAE1A102A9E6EFB00B50E88 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CAE1A0F2A9E6EFB00B50E88 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6CAE19D72A9E6E8500B50E88 /* Project object */;
 }
