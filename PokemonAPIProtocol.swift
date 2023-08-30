@@ -10,5 +10,4 @@ import Foundation
 protocol PokemonAPIProtocol {
   func getPokemonList(limit: Int) async -> Pokedex?
   func getPokemonInfo(pokemonNumber: Int) async -> Perfil?
-  
 }
