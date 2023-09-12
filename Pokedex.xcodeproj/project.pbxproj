@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		6CA167192AAFD32B00BF4A10 /* PokemonListRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167182AAFD32B00BF4A10 /* PokemonListRequirement.swift */; };
 		6CA1671C2AAFD3C000BF4A10 /* PokemonInfoRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1671B2AAFD3C000BF4A10 /* PokemonInfoRequirement.swift */; };
+		6CA1671E2AB0120E00BF4A10 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1671D2AB0120E00BF4A10 /* LoginView.swift */; };
+		6CA167222AB0146000BF4A10 /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167212AB0146000BF4A10 /* LocalService.swift */; };
+		6CA167242AB0171000BF4A10 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167232AB0171000BF4A10 /* UserRepository.swift */; };
+		6CA167262AB017DE00BF4A10 /* UserRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167252AB017DE00BF4A10 /* UserRequirement.swift */; };
+		6CA167282AB0187800BF4A10 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167272AB0187800BF4A10 /* LoginViewModel.swift */; };
+		6CA1672C2AB01D3000BF4A10 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA1672B2AB01D3000BF4A10 /* MenuView.swift */; };
+		6CA1672F2AB01DFD00BF4A10 /* FlowStacks in Frameworks */ = {isa = PBXBuildFile; productRef = 6CA1672E2AB01DFD00BF4A10 /* FlowStacks */; };
+		6CA167322AB0227700BF4A10 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167312AB0227700BF4A10 /* CoordinatorView.swift */; };
+		6CA167342AB028DA00BF4A10 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167332AB028DA00BF4A10 /* PokemonDetailView.swift */; };
+		6CA167362AB02A1800BF4A10 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167352AB02A1800BF4A10 /* ProfileView.swift */; };
+		6CA167382AB02A3C00BF4A10 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA167372AB02A3C00BF4A10 /* ProfileViewModel.swift */; };
 		6CAE19E32A9E6E8500B50E88 /* PokedexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE19E22A9E6E8500B50E88 /* PokedexApp.swift */; };
 		6CAE19E52A9E6E8500B50E88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE19E42A9E6E8500B50E88 /* ContentView.swift */; };
 		6CAE19E72A9E6E8600B50E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CAE19E62A9E6E8600B50E88 /* Assets.xcassets */; };
@@ -44,6 +55,16 @@
 /* Begin PBXFileReference section */
 		6CA167182AAFD32B00BF4A10 /* PokemonListRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListRequirement.swift; sourceTree = "<group>"; };
 		6CA1671B2AAFD3C000BF4A10 /* PokemonInfoRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonInfoRequirement.swift; sourceTree = "<group>"; };
+		6CA1671D2AB0120E00BF4A10 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6CA167212AB0146000BF4A10 /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		6CA167232AB0171000BF4A10 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		6CA167252AB017DE00BF4A10 /* UserRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequirement.swift; sourceTree = "<group>"; };
+		6CA167272AB0187800BF4A10 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6CA1672B2AB01D3000BF4A10 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		6CA167312AB0227700BF4A10 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		6CA167332AB028DA00BF4A10 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
+		6CA167352AB02A1800BF4A10 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6CA167372AB02A3C00BF4A10 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		6CAE19DF2A9E6E8500B50E88 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CAE19E22A9E6E8500B50E88 /* PokedexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexApp.swift; sourceTree = "<group>"; };
 		6CAE19E42A9E6E8500B50E88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +88,7 @@
 			files = (
 				6CAE1A112A9E6EFB00B50E88 /* SDWebImageSwiftUI in Frameworks */,
 				6CAE1A0E2A9E6EDB00B50E88 /* Alamofire in Frameworks */,
+				6CA1672F2AB01DFD00BF4A10 /* FlowStacks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,8 +112,9 @@
 		6C6168912AA2AD7400ECF075 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6CA167202AB0144E00BF4A10 /* Network */,
+				6CA1671F2AB0144A00BF4A10 /* Local */,
 				6CAE1A122A9E717400B50E88 /* Pokedex.swift */,
-				6CAE1A182A9E84EF00B50E88 /* NetworkApiService.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -100,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				6CDDCE142AA5A856009E122C /* ContentViewModel.swift */,
+				6CA167272AB0187800BF4A10 /* LoginViewModel.swift */,
+				6CA167372AB02A3C00BF4A10 /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -108,6 +133,11 @@
 			isa = PBXGroup;
 			children = (
 				6CAE19E42A9E6E8500B50E88 /* ContentView.swift */,
+				6CA167332AB028DA00BF4A10 /* PokemonDetailView.swift */,
+				6CA167352AB02A1800BF4A10 /* ProfileView.swift */,
+				6CA1671D2AB0120E00BF4A10 /* LoginView.swift */,
+				6CA1672B2AB01D3000BF4A10 /* MenuView.swift */,
+				6CA167312AB0227700BF4A10 /* CoordinatorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +147,7 @@
 			children = (
 				6CA167182AAFD32B00BF4A10 /* PokemonListRequirement.swift */,
 				6CA1671B2AAFD3C000BF4A10 /* PokemonInfoRequirement.swift */,
+				6CA167252AB017DE00BF4A10 /* UserRequirement.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -126,6 +157,7 @@
 			children = (
 				6C6168912AA2AD7400ECF075 /* Models */,
 				6CAE1A162A9E78D500B50E88 /* PokemonRepository.swift */,
+				6CA167232AB0171000BF4A10 /* UserRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -137,6 +169,22 @@
 				6C6168942AA2AD9A00ECF075 /* ViewModels */,
 			);
 			path = Framework;
+			sourceTree = "<group>";
+		};
+		6CA1671F2AB0144A00BF4A10 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				6CA167212AB0146000BF4A10 /* LocalService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		6CA167202AB0144E00BF4A10 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6CAE1A182A9E84EF00B50E88 /* NetworkApiService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		6CAE19D62A9E6E8500B50E88 = {
@@ -217,6 +265,7 @@
 			packageProductDependencies = (
 				6CAE1A0D2A9E6EDB00B50E88 /* Alamofire */,
 				6CAE1A102A9E6EFB00B50E88 /* SDWebImageSwiftUI */,
+				6CA1672E2AB01DFD00BF4A10 /* FlowStacks */,
 			);
 			productName = Pokedex;
 			productReference = 6CAE19DF2A9E6E8500B50E88 /* Pokedex.app */;
@@ -293,6 +342,7 @@
 			packageReferences = (
 				6CAE1A0C2A9E6EDB00B50E88 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				6CAE1A0F2A9E6EFB00B50E88 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				6CA1672D2AB01DFD00BF4A10 /* XCRemoteSwiftPackageReference "FlowStacks" */,
 			);
 			productRefGroup = 6CAE19E02A9E6E8500B50E88 /* Products */;
 			projectDirPath = "";
@@ -358,10 +408,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA167262AB017DE00BF4A10 /* UserRequirement.swift in Sources */,
+				6CA167322AB0227700BF4A10 /* CoordinatorView.swift in Sources */,
+				6CA167242AB0171000BF4A10 /* UserRepository.swift in Sources */,
 				6CA1671C2AAFD3C000BF4A10 /* PokemonInfoRequirement.swift in Sources */,
 				6CAE1A192A9E84EF00B50E88 /* NetworkApiService.swift in Sources */,
 				6CAE1A172A9E78D500B50E88 /* PokemonRepository.swift in Sources */,
+				6CA167222AB0146000BF4A10 /* LocalService.swift in Sources */,
+				6CA1671E2AB0120E00BF4A10 /* LoginView.swift in Sources */,
+				6CA1672C2AB01D3000BF4A10 /* MenuView.swift in Sources */,
+				6CA167362AB02A1800BF4A10 /* ProfileView.swift in Sources */,
+				6CA167342AB028DA00BF4A10 /* PokemonDetailView.swift in Sources */,
 				6CDDCE152AA5A856009E122C /* ContentViewModel.swift in Sources */,
+				6CA167382AB02A3C00BF4A10 /* ProfileViewModel.swift in Sources */,
+				6CA167282AB0187800BF4A10 /* LoginViewModel.swift in Sources */,
 				6CAE19E52A9E6E8500B50E88 /* ContentView.swift in Sources */,
 				6CA167192AAFD32B00BF4A10 /* PokemonListRequirement.swift in Sources */,
 				6CAE19E32A9E6E8500B50E88 /* PokedexApp.swift in Sources */,
@@ -688,6 +748,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6CA1672D2AB01DFD00BF4A10 /* XCRemoteSwiftPackageReference "FlowStacks" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/FlowStacks";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.4;
+			};
+		};
 		6CAE1A0C2A9E6EDB00B50E88 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -707,6 +775,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6CA1672E2AB01DFD00BF4A10 /* FlowStacks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CA1672D2AB01DFD00BF4A10 /* XCRemoteSwiftPackageReference "FlowStacks" */;
+			productName = FlowStacks;
+		};
 		6CAE1A0D2A9E6EDB00B50E88 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6CAE1A0C2A9E6EDB00B50E88 /* XCRemoteSwiftPackageReference "Alamofire" */;

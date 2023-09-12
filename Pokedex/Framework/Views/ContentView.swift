@@ -13,33 +13,35 @@ struct ContentView: View {
   @State var searchedPokemon = ""
 
   var body: some View {
+    NavigationView {
+      VStack(alignment: .center) {
+        Text("Pokedex").font(.largeTitle).bold().padding(.leading, 20)
+        if contentViewModel.isLoading {
+          ProgressView()
+            .progressViewStyle(.circular)
 
-    VStack(alignment: .leading) {
-      Text("Pokedex").font(.largeTitle).bold().padding(.leading, 20)
-      if contentViewModel.isLoading {
-        ProgressView()
-          .progressViewStyle(.circular)
+        } else {
+          TextField("Search a Pokemon...", text: $searchedPokemon)
+            .autocorrectionDisabled()
+            .padding(.horizontal, 20)
+            .onChange(of: searchedPokemon) { newSearch in
+              contentViewModel.searchedPokemon = newSearch
+              contentViewModel.filterPokemon()
+            }
+            .textInputAutocapitalization(.never)
 
-      } else {
-        TextField("Search a Pokemon...", text: $searchedPokemon)
-          .autocorrectionDisabled()
-          .padding(.horizontal, 20)
-          .onChange(of: searchedPokemon) { newSearch in
-            contentViewModel.searchedPokemon = newSearch
-            contentViewModel.filterPokemon()
-          }
-          .textInputAutocapitalization(.never)
-        List(contentViewModel.viewPokemonList) { pokemonBase in
-          HStack {
-            WebImage(url: URL(string: pokemonBase.perfil?.sprites.front_default ?? ""))
-              .resizable()
-              .scaledToFit()
-              .frame(width: 48, height: 48, alignment: .center)
-            Text(pokemonBase.pokemon.name)
-            Spacer()
-            Image(systemName: "chevron.compact.right").opacity(0.2)
-          }.onTapGesture {
-            print("touched \(pokemonBase.pokemon.name)")
+          List(contentViewModel.viewPokemonList) { pokemonBase in
+            NavigationLink {
+              PokemonDetailView(pokemonBase: pokemonBase)
+            } label: {
+              HStack {
+                WebImage(url: URL(string: pokemonBase.perfil?.sprites.front_default ?? ""))
+                  .resizable()
+                  .scaledToFit()
+                  .frame(width: 48, height: 48, alignment: .center)
+                Text(pokemonBase.pokemon.name)
+              }
+            }
           }
         }
       }
