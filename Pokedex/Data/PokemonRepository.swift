@@ -9,30 +9,37 @@ import Foundation
 
 class Api {
   static let base = "https://pokeapi.co/api/v2"
-  
-  struct routes {
+  struct Routes {
     static let pokemon = "/pokemon"
   }
 }
 
+protocol PokemonAPIProtocol {
+  func getPokemonList(limit: Int) async -> Pokedex?
+  func getPokemonInfo(pokemonNumber: Int) async -> Perfil?
+}
+
 class PokemonRepository: PokemonAPIProtocol {
   let nService: NetworkAPIService
-  
+  static let shared = PokemonRepository()
+
   init(nService: NetworkAPIService = NetworkAPIService.shared) {
     self.nService = nService
   }
-  
+
   func getPokemonList(limit: Int) async -> Pokedex? {
-    return await nService
+    return
+      await nService
       .getPokedex(
-        url: URL(string: "\(Api.base)\(Api.routes.pokemon)")!,
+        url: URL(string: "\(Api.base)\(Api.Routes.pokemon)")!,
         limit: limit)
   }
-  
+
   func getPokemonInfo(pokemonNumber: Int) async -> Perfil? {
-    return await nService
+    return
+      await nService
       .getPokemonInfo(
         url: URL(
-          string: "\(Api.base)\(Api.routes.pokemon)/\(pokemonNumber)")!)
+          string: "\(Api.base)\(Api.Routes.pokemon)/\(pokemonNumber)")!)
   }
 }

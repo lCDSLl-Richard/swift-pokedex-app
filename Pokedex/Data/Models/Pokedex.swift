@@ -22,13 +22,15 @@ struct Perfil: Codable {
 }
 
 struct Sprite: Codable {
+  // swiftlint:disable identifier_name
   var front_default: String
   var back_default: String
+  // swiftlint:enable identifier_name
 }
 
 struct PokemonBase: Identifiable {
   var id: Int
-  
+
   var pokemon: Pokemon
   var perfil: Perfil?
 }
